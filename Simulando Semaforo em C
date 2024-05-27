@@ -1,0 +1,23 @@
+const int ledVerde = 2; // LED Verde conectado ao pino digital 2
+const int ledAmarelo = 3; // LED Amarelo conectado ao pino digital 3
+const int ledVermelho = 4; // LED Vermelho conectado ao pino digital 4
+
+void setup() {
+  pinMode(ledVerde, OUTPUT); // Define o pino do LED Verde como saída
+  pinMode(ledAmarelo, OUTPUT); // Define o pino do LED Amarelo como saída
+  pinMode(ledVermelho, OUTPUT); // Define o pino do LED Vermelho como saída
+}
+
+void loop() {
+  digitalWrite(ledVerde, HIGH); // Liga o LED Verde
+  delay(5000); // Espera por 5 segundos
+  digitalWrite(ledVerde, LOW); // Desliga o LED Verde
+  
+  digitalWrite(ledAmarelo, HIGH); // Liga o LED Amarelo
+  delay(2000); // Espera por 2 segundos
+  digitalWrite(ledAmarelo, LOW); // Desliga o LED Amarelo
+  
+  digitalWrite(ledVermelho, HIGH); // Liga o LED Vermelho
+  delay(5000); // Espera por 5 segundos
+  digitalWrite(ledVermelho, LOW); // Desliga o LED Vermelho
+}
